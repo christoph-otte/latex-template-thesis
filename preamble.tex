@@ -9,21 +9,28 @@
 %\setsansfont{Computer Modern}
 \setmonofont{Ubuntu Mono}[Scale=0.8]
 
+% line spacing
 \usepackage{setspace}
 \setstretch{1.25}
 
-% Abstract heading per language
+% satzspiegel
+\usepackage[
+  left = 25mm,
+  right = 25mm,
+  top = 25mm,
+  bottom = 25mm
+]{geometry}
+
+
+% abstract heading per language
 \usepackage{abstract}
-% \addto\captionsenglish{\renewcommand{\abstractname}{Abstract}}
-% \addto\captionsngerman{\renewcommand{\abstractname}{Zusammenfassung}}
 
 % microtypography
-% https://en.wikipedia.org/wiki/microtypography
+% reference: https://en.wikipedia.org/wiki/microtypography
 \usepackage{microtype}
 
-
 \usepackage{enumitem}
-% \setlist{nosep} % Zeilenabstand verändern
+% example: \setlist{nosep} % Zeilenabstand verändern
 
 % math
 \usepackage{amsmath}
@@ -32,6 +39,7 @@
 \usepackage{amsthm}
 \usepackage{mathtools}
 
+% optional: 
 %\usepackage[
 %  math-style = TeX,
 %  bold-style = ISO,
@@ -39,6 +47,9 @@
 %  partial    = upright,
 %]{unicode-math}
 %\setmathfont{Libertinus Math}
+
+\usepackage{tikz}
+\usetikzlibrary{arrows}
 
 % quotes
 \usepackage{csquotes}
@@ -77,7 +88,7 @@
 \usepackage{subcaption}
 
 \captionsetup{
-	textfont=sf,
+%	textfont=sf,
 	labelfont={sf, bf}
 }
 \captionsetup[figure]{position=bottom}
@@ -115,7 +126,7 @@
   dateabbrev = false
 ]{biblatex}
 \addbibresource{bib/references.bib}
-%\setlength{\bibitemsep}{0.5\baselineskip}
+% optional: \setlength{\bibitemsep}{0.5\baselineskip}
 
 % hyperlinks
 \usepackage[

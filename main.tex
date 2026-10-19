@@ -1,16 +1,21 @@
-
+% Updated: October 14, 2026
 
 \documentclass[
 	11pt,          % base font size to 12pt
 	a4paper,       % uses DIN A4 format
-	twoside,       % double-sided layout
-%	DIV=calc,      % calculates automatically best type area ("Satzspiegel")
-%	BCOR=0mm,      % binding correction 
+	twoside=semi,  % double-sided layout
+%	DIV=calc,      % optional: calculates automatically best type area ("Satzspiegel")
+%	BCOR=0mm,      % optional: binding correction 
 	listof=totoc,  % adds lists (figures, tables, etc.) to the table of contents
 	openright      % forces new chapters to start on a right-handed page
 ]{scrreprt}
 
 \input{preamble}
+
+\newcommand{\ket}[1]{$\left|#1\right\rangle$}
+\newcommand{\Om}[1]{\small $\omega_{#1}$}
+\newcommand{\De}[1]{$\Delta_{#1}$}
+\newcommand{\Ga}[1]{$\Gamma_{#1}$}
 
 \begin{document}
 

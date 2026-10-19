@@ -1,44 +1,53 @@
 \chapter{Introduction}
-\label{ch:01_introduction}
+\label{ch:introduction}
 
-This LaTeX document is intended to serve as a complete template of a typical thesis \cite{book, article}.
+This LaTeX document is intended to serve as a complete template of a typical thesis \parencite{book, article}.
 
 \section{Background and Motivation}
-\label{sec:01_introduction-background_motivation}
+\label{sec:background-motivation}
 
 \blindtext
-
-\begin{figure}[!b]
+%
+\begin{figure}
 	\centering
 	\includegraphics[width=0.5\textwidth]{example-image}
-	\caption{Example figure placeholder used to demonstrate float placement.}
+	\caption[
+		Example figure placeholder used to demonstrate float placement
+	  ]{
+		Example figure placeholder used to demonstrate float placement.
+	  }
 	\label{fig:intro-placeholder}
 \end{figure}
-
+%
 \blindtext
 
 \section{Research Question and Objectives}
+\label{sec:research-questions-objectives}
 
-Background and motivation of this thesis is presented in \cref{sec:01_introduction-background_motivation}.
+Background and motivation of this thesis is presented in \cref{sec:background-motivation}.
 
 \blindtext
-
+%
 \begin{itemize}
 	\item This is the first item,
 	\item the second item, and
 	\item the last item
 \end{itemize}
-
+%
+\blindtext
+%
 \begin{itemize}[label=--]
 	\item This is the first item,
 	\item the second item, and
 	\item the last item
 \end{itemize}
-
+%
+\blindtext
+%
 \begin{enumerate}
 	\item This is the first item,
 	\item the second item, and
 	\item the last item
 \end{enumerate}
-
+%
 \blindtext
